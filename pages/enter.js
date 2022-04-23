@@ -6,7 +6,6 @@ export default function Enter({ props }) {
   console.log(user);
 
   const handleChildChange = newValue => {
-    console.log("setuser");
     setUser(newValue);
   };
   // 1. User signed in
@@ -23,7 +22,6 @@ export default function Enter({ props }) {
 }
 
 const SignInButton = props => {
-  console.log(props);
   const signInWithGoogle = async () => {
     try {
       const result = await signInWithPopup(auth, googleAuthProvider);
